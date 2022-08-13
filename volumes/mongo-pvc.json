@@ -1,0 +1,24 @@
+{
+  "kind": "PersistentVolumeClaim",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "mongo-claim"
+  },
+  "spec": {
+    "accessModes": [
+      "ReadWriteOnce"
+    ],
+    "storageClassName": "",
+    "volumeMode": "Filesystem",
+    "resources": {
+      "requests": {
+        "storage": "500Mi"
+      }
+    },
+    "selector": {
+      "matchLabels": {
+        "role": "database"
+      }
+    }
+  }
+}
