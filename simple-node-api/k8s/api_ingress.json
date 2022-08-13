@@ -1,0 +1,49 @@
+{
+  "apiVersion": "networking.k8s.io/v1",
+  "kind": "Ingress",
+  "metadata": {
+    "name": "api-ing"
+  },
+  "spec": {
+    "rules": [
+      {
+        "host": "minhaapi.info",
+        "http": {
+          "paths": [
+            {
+              "path": "/api",
+              "pathType": "Prefix",
+              "backend": {
+                "service": {
+                  "name": "pod-api-svc",
+                  "port": {
+                    "number": 8085
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "host": "minhaapi.info.192.168.49.2.nip.io",
+        "http": {
+          "paths": [
+            {
+              "path": "/",
+              "pathType": "Prefix",
+              "backend": {
+                "service": {
+                  "name": "pod-api-svc",
+                  "port": {
+                    "number": 8085
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
