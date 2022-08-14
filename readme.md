@@ -14,6 +14,10 @@ Contents of this repository were created while reading the **Kubernetes - Tudo s
 - [PersistentVolume](https://kubernetes.io/pt-br/docs/concepts/storage/persistent-volumes/)
 - [PersistentVolumeClaim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims)
 
+**secrets**: Protecting confidential data
+- [volume](https://kubernetes.io/docs/concepts/configuration/secret/#use-case-dotfiles-in-a-secret-volume)
+- [env](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-environment-variables)
+
 ## References
 - [Ebook](https://www.casadocodigo.com.br/products/livro-kubernetes)
 - [Kubernetes](https://kubernetes.io/)
