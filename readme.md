@@ -18,6 +18,10 @@ Contents of this repository were created while reading the **Kubernetes - Tudo s
 - [volume](https://kubernetes.io/docs/concepts/configuration/secret/#use-case-dotfiles-in-a-secret-volume)
 - [env](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-environment-variables)
 
+**config-map**: Environment variables
+- [env](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-object)
+- [volumes](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-object)
+
 ## References
 - [Ebook](https://www.casadocodigo.com.br/products/livro-kubernetes)
 - [Kubernetes](https://kubernetes.io/)
