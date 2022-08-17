@@ -22,6 +22,11 @@ Contents of this repository were created while reading the **Kubernetes - Tudo s
 - [env](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-object)
 - [volumes](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-object)
 
+**deploy**: Deployment provides declarative updates for Pods and ReplicaSets.
+- [revisionHistoryLimit](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#revision-history-limit)
+- [strategy](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
+- [checking-rollout-history-of-a-deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#checking-rollout-history-of-a-deployment)
+
 ## References
 - [Ebook](https://www.casadocodigo.com.br/products/livro-kubernetes)
 - [Kubernetes](https://kubernetes.io/)
