@@ -1,0 +1,28 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "CronJob",
+  "metadata": {
+    "name": "pi"
+  },
+  "spec": {
+    "schedule": "*/1 * * * *",
+    "successfulJobsHistoryLimit": 5,
+    "failedJobsHistoryLimit": 5,
+    "jobTemplate": {
+      "spec": {
+        "template": {
+          "spec": {
+            "containers": [
+              {
+                "name": "pi",
+                "image": "alpine",
+                "args": ["sh", "-c", "echo 3.14"]
+              }
+            ],
+            "restartPolicy": "OnFailure"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "pi"
+  },
+  "spec": {
+    "template": {
+      "spec": {
+        "containers": [
+          {
+            "name": "pi",
+            "image": "alpine",
+            "command": ["sh", "-c", "echo 3.14"]
+          }
+        ],
+        "restartPolicy": "Never"
+      }
+    },
+    "backoffLimit": 4
+  }
+}

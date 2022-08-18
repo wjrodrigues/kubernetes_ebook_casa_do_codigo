@@ -30,6 +30,10 @@ Contents of this repository were created while reading the **Kubernetes - Tudo s
 **hpa**: Horizontal Pod Autoscaling
 - [horizontal-pod-autoscale](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 
+**job/cronjob**: A Job creates one or more Pods and will continue to retry execution of the Pods until a specified number of them successfully terminate.
+- [job](https://kubernetes.io/docs/concepts/workloads/controllers/job/#running-an-example-job)
+- [cronjob](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
+
 ## References
 - [Ebook](https://www.casadocodigo.com.br/products/livro-kubernetes)
 - [Kubernetes](https://kubernetes.io/)
