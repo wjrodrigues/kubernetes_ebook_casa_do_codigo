@@ -1,0 +1,31 @@
+{
+  "apiVersion": "autoscaling/v2",
+  "kind": "HorizontalPodAutoscaler",
+  "metadata": {
+    "name": "heavy-deploy",
+    "labels": {
+      "label": "heavy-hpa"
+    }
+  },
+  "spec": {
+    "scaleTargetRef": {
+      "kind": "Deployment",
+      "name": "heavy-deploy",
+      "apiVersion": "apps/v1"
+    },
+    "minReplicas": 1,
+    "maxReplicas": 10,
+    "metrics": [
+      {
+        "type": "Resource",
+        "resource": {
+          "name": "cpu",
+          "target": {
+            "type": "Utilization",
+            "averageUtilization": 50
+          }
+        }
+      }
+    ]
+  }
+}

@@ -27,6 +27,9 @@ Contents of this repository were created while reading the **Kubernetes - Tudo s
 - [strategy](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
 - [checking-rollout-history-of-a-deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#checking-rollout-history-of-a-deployment)
 
+**hpa**: Horizontal Pod Autoscaling
+- [horizontal-pod-autoscale](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+
 ## References
 - [Ebook](https://www.casadocodigo.com.br/products/livro-kubernetes)
 - [Kubernetes](https://kubernetes.io/)
